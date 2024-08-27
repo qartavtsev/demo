@@ -36,7 +36,7 @@ jobs:
       - name: Install allurectl
         uses: allure-framework/setup-allurectl@v1
         with:
-          ALLURE_ENDPOINT: https://sandbox.qatools.cloud/
+          ALLURE_ENDPOINT: https://demo.qatools.cloud/
           ALLURE_PROJECT_ID: ${{ github.event.inputs.ALLURE_PROJECT_ID}}
           ALLURE_TOKEN: ${{ secrets.ALLURE_TOKEN }}
           
@@ -50,6 +50,6 @@ jobs:
           ALLURE_TESTPLAN_PATH: "./testplan.json"
           BRANCH: ${{ github.ref_name }}
           BROWSER: 'Chrome'
-          ENDPOINT: 'sandbox.qatools.cloud'
+          ENDPOINT: 'demo.qatools.cloud'
           OS: 'macOS'
           VERSION: '5.2.0-sb'
